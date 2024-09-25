@@ -1,0 +1,95 @@
+.collection-view {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  /* background-color: aqua; */
+  justify-content: space-between;
+}
+
+/* Style untuk kontainer utama */
+.grid-container {
+  width: 460px;
+  /* margin: auto; */
+  display: flex;
+  flex-wrap: nowrap; /* Tidak membiarkan elemen wrap */
+  overflow-x: auto; /* Scroll horizontal */
+  padding: 10px;
+  /* background-color: yellow; */
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertically align the content */
+  justify-content: flex-start;
+  width: 200px; /* Set lebar minimal agar terlihat dalam scroll */
+  padding: 10px;
+  margin-right: 20px; /* Jarak antar item */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+  gap: 20px;
+  height: 110px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.grid-item img {
+  border-radius: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.grid-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-description h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.grid-description a {
+  text-decoration: none;
+}
+
+.grid-description .btn {
+  margin-top: 10px;
+}
+
+/* =========================================================================== */
+/* BACK BTN */
+.back-btn {
+  margin: auto;
+  width: 60px;
+  height: 110px;
+  background-color: orangered;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.back-btn img {
+  margin: auto;
+  width: 60px;
+  height: 100px;
+  display: flex;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+}

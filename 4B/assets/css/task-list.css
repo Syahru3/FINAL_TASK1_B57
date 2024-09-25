@@ -1,0 +1,50 @@
+ /* Container untuk setiap task */
+ .task-list {
+    background-color: orange; /* Oranye tua */
+    color: white; /* Warna teks putih */
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+  }
+
+  /* Label untuk task */
+  .task-list label {
+    font-size: 18px;
+    flex: 1;
+    margin-right: 15px;
+  }
+
+  /* Styling untuk container checkbox dan tombol delete */
+  .check-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Checkbox diperbesar */
+  .check-btn input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transform: scale(1.5); /* Membesarkan checkbox */
+  }
+
+  /* Tombol delete */
+  .deleteButton {
+    background-color: red; /* Warna merah */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Warna tombol delete saat di-hover */
+  .deleteButton:hover {
+    background-color: #c0392b; /* Merah lebih gelap */
+  }
